@@ -23,7 +23,7 @@ public class HotelManagementRepository {
 
     public String addHotel(Hotel hotel) {
         if(!Objects.nonNull(hotel) || !(Objects.nonNull(hotel.getHotelName()))){
-            return "an empty a FAILURE";
+            return "FAILURE";
         }
         else if(hotelMap.containsKey(hotel.getHotelName())){
             return "FAILURE";
